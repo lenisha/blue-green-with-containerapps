@@ -1,5 +1,5 @@
 param location string = resourceGroup().location
-param environmentName string = 'env-${resourceGroup().name}'
+param environmentName string = 'env-containerbgdemo'
 param internalOnly bool = false
 
 module redis 'redis.bicep' = {

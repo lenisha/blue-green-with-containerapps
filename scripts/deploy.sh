@@ -23,8 +23,8 @@ REGISTRY="$3"
 
 SUBSCRIPTION_ID=$(az account show --query id -o tsv) 
 AZURE_CORE_ONLY_SHOW_ERRORS="True"
-CONTAINERAPPS_ENVIRONMENT_NAME="env-$DEPLOYMENT_NAME" # Name of the ContainerApp Environment
-REDIS_NAME="rds-env-$DEPLOYMENT_NAME"
+CONTAINERAPPS_ENVIRONMENT_NAME="env-containerbgdemo" # Name of the ContainerApp Environment
+REDIS_NAME="rds-env-containerbgdemo"
 RESOURCE_GROUP=$DEPLOYMENT_NAME # here enter the resources group
 CONTAINERAPPS_LOCATION="Central US EUAP"
 LOCATION=$(az group show -n $RESOURCE_GROUP --query location -o tsv)
